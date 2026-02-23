@@ -8,7 +8,7 @@ class Category(models.Model):
     class Meta:
         ordering = ('name',) # сортировка по умолчанию, в данном случае сортировка по name
         verbose_name = 'Категория' #перевод с англ на русс
-        verbose_name_plural = 'Категорий' #перевод множественного на русс
+        verbose_name_plural = 'Категории' #перевод множественного на русс
         
     def __str__(self):   #отображение в админке категорий по имени, будет не <Category object (1)>, а нормальное название
         return self.name
